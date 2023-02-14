@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>399</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>399</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>399</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>399</width>
+     <height>600</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>399</width>
+     <height>600</height>
+    </size>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>400</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>400</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>400</width>
+      <height>600</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(25, 0, 38);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="add_attendance">
+     <widget class="QLineEdit" name="male">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>320</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(216, 216, 216);
+border: none;
+border-bottom: 2px solid rgb(136, 68, 204);
+border-radius: 10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Male</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>40</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(225, 225, 225);</string>
+      </property>
+      <property name="text">
+       <string>CIH Attendance</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Title">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>110</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(216, 216, 216);
+border: none;
+border-bottom: 2px solid rgb(136, 68, 204);
+border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Title</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="female">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>390</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(216, 216, 216);
+border: none;
+border-bottom: 2px solid rgb(136, 68, 204);
+border-radius: 10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Female</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="add_attendance_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>450</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:  rgb(136, 68, 204);
+color: rgb(216, 216, 216);
+border-radius: 8%;</string>
+      </property>
+      <property name="text">
+       <string>Add Attendance</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/bookmark-plus-fill.svg</normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/bookmark-plus-fill.svg</iconset>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="view_statistics">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>510</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:  rgb(136, 68, 204);
+color: rgb(216, 216, 216);</string>
+      </property>
+      <property name="text">
+       <string>View statistics</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/graph-up-arrow.svg</normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/graph-up-arrow.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>510</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(216, 216, 216);
+background-color: rgb(66, 0, 99);
+border-radius: 8%;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>570</y>
+        <width>174</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(190, 190, 190);</string>
+      </property>
+      <property name="text">
+       <string>Created by yembot powered by CIH</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="dropdown">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>180</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(216, 216, 216);
+border: none;
+border-bottom: 2px solid rgb(136, 68, 204);
+border-radius: 10px;</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="day">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>250</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(216, 216, 216);
+border: none;
+border-bottom: 2px solid rgb(136, 68, 204);
+border-radius: 10px;</string>
+      </property>
+     </widget>
+     <zorder>label_2</zorder>
+     <zorder>male</zorder>
+     <zorder>label</zorder>
+     <zorder>Title</zorder>
+     <zorder>female</zorder>
+     <zorder>add_attendance_2</zorder>
+     <zorder>view_statistics</zorder>
+     <zorder>label_8</zorder>
+     <zorder>dropdown</zorder>
+     <zorder>day</zorder>
+    </widget>
+    <widget class="QWidget" name="table_page">
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>351</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(88, 0, 132);
+gridline-color: rgb(214, 214, 214);
+color: rgb(36, 0, 54);
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::WinPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="download_image">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>400</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:  rgb(136, 68, 204);
+color: rgb(216, 216, 216);
+border-radius: 8%;</string>
+      </property>
+      <property name="text">
+       <string>Download as Image</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/download.svg</normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/download.svg</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="view_statistics_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>470</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:  rgb(136, 68, 204);
+color: rgb(216, 216, 216);
+border-radius: 8%;</string>
+      </property>
+      <property name="text">
+       <string>View Statistics</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/graph-up-arrow.svg</normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/graph-up-arrow.svg</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="dowload_pdf">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>330</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:  rgb(136, 68, 204);
+color: rgb(216, 216, 216);
+border-radius: 8%;</string>
+      </property>
+      <property name="text">
+       <string>Download as PDF</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/download.svg</normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/download.svg</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>570</y>
+        <width>174</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(190, 190, 190);</string>
+      </property>
+      <property name="text">
+       <string>Created by yembot powered by CIH</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="go_back">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:  rgb(136, 68, 204);
+color: rgb(216, 216, 216);
+border-radius: 8%;</string>
+      </property>
+      <property name="text">
+       <string>Go Back</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/backspace-fill.svg</normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/backspace-fill.svg</iconset>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="select_attendant">
+     <widget class="QListWidget" name="listWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>351</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(180, 180, 180);
+background-color: rgb(84, 0, 127);</string>
+      </property>
+      <property name="dragEnabled">
+       <bool>true</bool>
+      </property>
+      <property name="dragDropOverwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="dragDropMode">
+       <enum>QAbstractItemView::DragDrop</enum>
+      </property>
+      <property name="defaultDropAction">
+       <enum>Qt::MoveAction</enum>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>false</bool>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideMiddle</enum>
+      </property>
+      <property name="gridSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="viewMode">
+       <enum>QListView::ListMode</enum>
+      </property>
+      <property name="uniformItemSizes">
+       <bool>false</bool>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>68</x>
+        <y>30</y>
+        <width>261</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(225, 225, 225);</string>
+      </property>
+      <property name="text">
+       <string>Select An Attendant To Check</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="add_attendant">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>450</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:  rgb(136, 68, 204);
+color: rgb(216, 216, 216);</string>
+      </property>
+      <property name="text">
+       <string>Add Attendant</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/bookmark-plus-fill.svg</normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/bookmark-plus-fill.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>510</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(216, 216, 216);
+background-color: rgb(66, 0, 99);
+border-radius: 8%;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="view_all">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>510</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:  rgb(136, 68, 204);
+color: rgb(216, 216, 216);</string>
+      </property>
+      <property name="text">
+       <string>View All</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/view-list.svg</normaloff>
+        <activeon>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/view-stacked.svg</activeon>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/view-list.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>450</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(216, 216, 216);
+background-color: rgb(66, 0, 99);
+border-radius: 8%;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="delete_attendant">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>390</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:  rgb(136, 68, 204);
+color: rgb(216, 216, 216);</string>
+      </property>
+      <property name="text">
+       <string>Delete Attendant</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/trash-fill.svg</normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/trash-fill.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>390</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(216, 216, 216);
+background-color: rgb(66, 0, 99);
+border-radius: 8%;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>570</y>
+        <width>174</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(190, 190, 190);</string>
+      </property>
+      <property name="text">
+       <string>Created by yembot powered by CIH</string>
+      </property>
+     </widget>
+     <widget class="QCommandLinkButton" name="clear_attendant">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>390</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:  rgb(136, 68, 204);
+color: rgb(216, 216, 216);</string>
+      </property>
+      <property name="text">
+       <string>Clear Attendant</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/recycle.svg</normaloff>../../hidden/bs/bootstrap-icons-1.7.2/bootstrap-icons-1.7.2/recycle.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>25</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>390</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(216, 216, 216);
+background-color: rgb(66, 0, 99);
+border-radius: 8%;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>label_10</zorder>
+     <zorder>label_6</zorder>
+     <zorder>label_5</zorder>
+     <zorder>label_3</zorder>
+     <zorder>listWidget</zorder>
+     <zorder>label_4</zorder>
+     <zorder>add_attendant</zorder>
+     <zorder>view_all</zorder>
+     <zorder>delete_attendant</zorder>
+     <zorder>label_9</zorder>
+     <zorder>clear_attendant</zorder>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>listWidget</sender>
+   <signal>itemPressed(QListWidgetItem*)</signal>
+   <receiver>listWidget</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>85</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>85</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listWidget</sender>
+   <signal>itemPressed(QListWidgetItem*)</signal>
+   <receiver>listWidget</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>84</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
